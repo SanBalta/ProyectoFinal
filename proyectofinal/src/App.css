@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+
+.fila{
+  display: flex;
+  flex-direction: row;
+}
+.column-b{
+  display: flex;
+  flex-direction: column;
+  flex: 25%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bar_nav > a{
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.firma{
+text-align: center;
+align-content: center;
+width: auto;
+margin:10px;
+height: 150px;
+border-radius: 15px;
+border: 2px solid #4682B4;
+font-size: 8pt;
 }
+.firma > img{
+  width: 150px;
+}
+.column-b > div{
+  margin-bottom: auto;
+}
+.btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+button{
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  border: 2px solid #4682B4;
+}
+button:hover{
+ background-color: #4682B4;
+ color: white;
+}
+.bienvenido{
+  font-size: 30pt;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-weight: bold;
+  font-family: 'Lucida Grande';
+}
+img{
+    width: 2cm;
+    margin: 5px 0 5px 0;
+    border-radius: 15px;
+}
+.container1{
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content:space-between;
+    font-size: 15pt;
+    font-family: Arial;
+    background-color:#0000CD;
+    color: white;
+    padding: 10px 30px 10px 30px;
+}
+.login{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 0;
+  padding: 0;
+
+}
+.login form{
+  background-color:#4682B4;
+  width: 400px;
+  border-radius: 25px;
+  margin:50px auto;
+}
+.login div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+
+} 
+.email label{
+  text-align: center;
   color: white;
+  margin: 10px;
+  padding: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.pass label{
+  text-align: center;
+  color: white;
+  margin: 10px;
+  padding: 5px;
 }
+button{
+  border-radius: 15px;
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+  border: none;
+  background-color: #B0E0E6;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+button:hover {
+  transform:scale(1.1);
 }
